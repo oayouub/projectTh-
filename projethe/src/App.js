@@ -3,9 +3,13 @@
 
 function App() {
   return (
-    <div className="App">
-    <h1>uwu</h1>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+
+      <Route path="*" element={<Home />} />
+    </Routes>
+  </BrowserRouter>
   );
 }
 
