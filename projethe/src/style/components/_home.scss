@@ -1,0 +1,65 @@
+.sectionBanniere{
+    margin-top: 5vh;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+    img{
+        max-width: 100vw;
+    }
+
+    button{
+        position: absolute;
+        bottom: 20%;
+       right :15%;
+       border: none;
+       background-color: $color5;
+       color: $color2;
+       width: 200px;
+       padding: 15px;
+       border-radius: 5px;
+       font-size: 1rem;
+    }
+}
+
+.categorieDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin: 100px 100px;
+    h2{
+        color: $color5;
+    }
+
+    .categorie-filter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color4;
+        width: 70%;
+        border-radius: 0px 50px 0px 50px;
+        padding: 20px 0;
+        ul{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            color: $color2;
+            width: 60%;
+            
+            li{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            img{
+                max-width: 80px;
+                max-height: 80px;
+                border-radius: 100px;
+            }
+        }
+        }
+    }
+}
