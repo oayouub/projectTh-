@@ -10,8 +10,13 @@
         justify-content: space-between;
         width: 60%;
         color: white;
-
+        position: relative;
+        
         input{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             height: 25px;
             width: 400px;
             text-align: center;
