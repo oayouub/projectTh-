@@ -5,13 +5,13 @@ const Navigation = () => {
         <div>
             <div className="navbarTop">
                 <ul>
-                    <li><img src="./logo.png" alt="img
+                    <li id='logo'><img src="./img/logo.png" alt="img
                     " /></li>
                     <li><input type="text" placeholder='Recherche produits...'/></li>
-                    <li>
-                        <img src="./icon_account.png" alt="icon" />
-                        <img src="./icon_help.png" alt="icon" />
-                        <img src="./icon_cart.png" alt="icon" />
+                    <li id='icon'>
+                        <img src="./img/icon_account.png" alt="icon" />
+                        <img src="./img/icon_cart.png" alt="icon" />
+                        <img src="./img/icon_help.png" alt="icon" />
                     </li>
                 </ul>
             </div>

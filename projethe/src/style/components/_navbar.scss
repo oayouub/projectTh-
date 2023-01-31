@@ -3,15 +3,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 13vh;
     ul{
         display: flex;
         list-style: none;
         justify-content: space-between;
+        align-items: center;
         width: 60%;
         color: white;
         position: relative;
         
+        img{
+            width: 100%;
+        }
+        #logo{
+            width: 8%;
+        }
+        #icon{
+            width: 2.5%;
+            gap: 15px;
+            display: flex;
+            align-items: center ;
+            justify-content: center;
+        }
         input{
             position: absolute;
             top: 50%;
@@ -40,8 +54,15 @@
         justify-content: space-between;
         width: 20%;
         color: white;
-        font-family: 'font-1';
-
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       
+        
+        :hover{
+            color: $color3;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        
         #solde{
             color: $color3;
         }
