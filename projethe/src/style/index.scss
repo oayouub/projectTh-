@@ -1,7 +1,8 @@
-@import url(./_settings.scss);
+@import './settings';
+@import './components/navbar';
 
-.App{
-    h1{
-        color: blue;
-    }
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
 }

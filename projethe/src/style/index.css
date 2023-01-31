@@ -1,4 +1,2 @@
 @import url(./_settings.scss);
-.App h1 {
-  color: blue;
-}/*# sourceMappingURL=index.css.map */
+@import url(./components/_navbar.scss);/*# sourceMappingURL=index.css.map */
