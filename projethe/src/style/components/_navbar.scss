@@ -17,14 +17,17 @@
             width: 100%;
         }
         #logo{
-            width: 8%;
+            width: 100%;
         }
         #icon{
-            width: 2.5%;
+            width: 25px;
             gap: 15px;
             display: flex;
             align-items: center ;
             justify-content: center;
+        }
+        li{
+            max-width: 90px;
         }
         input{
             position: absolute;
