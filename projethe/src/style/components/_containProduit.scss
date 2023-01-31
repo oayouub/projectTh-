@@ -15,4 +15,15 @@
         
       }
 
+      
+    .infoProduit-container
+    {
+        ul{
+            @include displayFlex-JCC-AIC;
+        }
+        li{
+            list-style: none;
+        }
+    }
+
 }

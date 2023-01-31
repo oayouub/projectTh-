@@ -12,3 +12,9 @@ $color4:#86BB51;
 $color5:#216837;
 $color6:#F8F5E2;
 
+@mixin displayFlex-JCC-AIC
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
