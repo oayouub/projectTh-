@@ -7,7 +7,7 @@ const ContainProduit = () => {
         <img src="./img/thenoir.webp" alt="cheh" />
       </div>
 
-      <div className="infoProduit-container">
+      <div className="infoLeft-container">
         <div className="title-produit">
           <h2>Nom du produit</h2>
           <p>Description du produit</p>

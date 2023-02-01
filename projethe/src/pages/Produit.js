@@ -1,5 +1,6 @@
 import React from "react";
 import ContainProduit from "../components/ContainProduit";
+import InfoProduit from "../components/InfoProduit";
 import Navigation from "../components/Navigation";
 
 const Produit = () => {
@@ -8,6 +9,7 @@ const Produit = () => {
       {" "}
       <Navigation />
       <ContainProduit />;
+      <InfoProduit />;
     </div>
   );
 };

@@ -1,0 +1,53 @@
+.infoProduit-container
+{
+
+    p{
+        text-align: center;
+        margin: 0 250px;
+    }
+    .divider
+    {
+        padding: 40px;
+        padding-left: 140px;
+        padding-right: 140px;
+        @include displayFlex-JCC-AIC;
+
+       &::after,&::before
+        {
+            content: '';
+            flex-grow: 1;
+            height: 3px;
+            background-color: $color3;
+        }
+
+        &::before
+        {
+            margin-right: 2rem;
+        }
+        &::after
+        {
+            margin-left: 2rem;
+        }
+    }
+
+    
+
+    .preparation-container
+    {
+      @include displayFlex-JCC-AIC;
+
+
+
+
+        .contenue
+        {
+            display: block;
+            padding-top: 90px;
+            text-align: center;
+            
+            height: 200px;
+            width: 250px;
+            border: 1px solid $color3;
+        }
+    }
+}
