@@ -1,0 +1,26 @@
+.footer{
+    background-color: $color5;
+    
+    .contentFooter{
+        display: flex;
+        flex-direction: row;
+        color: $color2;
+        height: 50vh;
+        gap: 100px;
+        padding: 50px 100px;
+       
+        width: 60%;
+
+        .sectionFooter{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            list-style: none;
+        }
+    }
+}

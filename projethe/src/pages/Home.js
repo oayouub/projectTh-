@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../components/Card';
+import Footer from '../components/Footer';
 import Navigation from '../components/Navigation';
 
 
@@ -57,6 +58,8 @@ const Home = () => {
                 <li className='cardAvis'></li>
             </ul>
         </div>
+
+        <Footer />
 
         </div>
     );
