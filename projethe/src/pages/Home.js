@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from '../components/Card';
 import Navigation from '../components/Navigation';
 
 
@@ -39,12 +40,13 @@ const Home = () => {
         <div className="selectionProduit">
             <h2>Selection de produits</h2>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><Card /></li>
+                <li><Card /></li>
+                <li><Card /></li>
+                <li><Card /></li>
+                
             </ul>
-        </div>*
+        </div>
 
         <div className="selectionAvis">
         <h2>AVIS</h2>
