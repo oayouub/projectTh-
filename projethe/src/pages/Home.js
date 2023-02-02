@@ -40,21 +40,21 @@ const Home = () => {
         <div className="selectionProduit">
             <h2>Selection de produits</h2>
             <ul>
-                <li><Card /></li>
-                <li><Card /></li>
-                <li><Card /></li>
-                <li><Card /></li>
-                
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+        
             </ul>
         </div>
 
         <div className="selectionAvis">
         <h2>AVIS</h2>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li className='cardAvis'></li>
+                <li className='cardAvis'></li>
+                <li className='cardAvis'></li>
+                <li className='cardAvis'></li>
             </ul>
         </div>
 
