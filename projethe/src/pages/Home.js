@@ -6,6 +6,7 @@ const Home = () => {
     return (
         <div>
            <Navigation />
+
            <div className="sectionBanniere">
             <img src="./img/BANNIERE.png" alt="img" />
             <button>DÉCOUVRIR</button>
@@ -34,6 +35,26 @@ const Home = () => {
                     </ul>
                 </div>
             </div>
+
+        <div className="selectionProduit">
+            <h2>Selection de produits</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>*
+
+        <div className="selectionAvis">
+        <h2>AVIS</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
 
         </div>
     );
