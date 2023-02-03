@@ -10,7 +10,7 @@ import SliderProduit from './SliderProduit';
 
 const Slider = () => {
     return (
-      <div className="container py-2 px-2 justify-content-center bg-dark">
+      <div className="container py-2 px-2 justify-content-center  ">
         <Swiper
         freeMode={true}
         grabCursor={true}
@@ -20,7 +20,7 @@ const Slider = () => {
         modules={[FreeMode, Pagination]}
         className="mySwiper"
         slidesPerView={3}
-        spaceBetween={10}
+        spaceBetween={0}
         >
             <SwiperSlide>
                 <SliderProduit />
