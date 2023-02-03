@@ -11,8 +11,7 @@ const Produit = () => {
       {" "}
       <Navigation />
       <ContainProduit />;
-      <InfoProduit />;
-      <SliderProduit />;
+      <InfoProduit />;{/* <SliderProduit />; */}
       <Slider />
     </div>
   );
