@@ -1,4 +1,5 @@
 import React from "react";
+import BanniereSlide from "../components/BanniereSlide";
 import Card from "../components/Card";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
@@ -8,11 +9,7 @@ const Home = () => {
   return (
     <div>
       <Navigation />
-
-      <div className="sectionBanniere">
-        <img src="./img/BANNIERE.png" alt="img" />
-        <button>DÉCOUVRIR</button>
-      </div>
+      <BanniereSlide />
 
       <div className="categorieDiv">
         <h2>CATÉGORIES</h2>
