@@ -5,7 +5,7 @@ import 'swiper/css';
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import SliderProduit from './SliderProduit';
 
 const Slider = () => {
