@@ -4,10 +4,11 @@ import Card from "../components/Card";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 import Slider from "../components/Slider";
+import scrollWindow from "../components/Navigation";
 
 const Home = () => {
   return (
-    <div>
+    <div className="home" onScroll={(e)=> scrollWindow(e)}>
       <Navigation />
       <BanniereSlide />
 
