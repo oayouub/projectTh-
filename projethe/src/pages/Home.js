@@ -10,13 +10,13 @@ import SelectionProduit from "../components/SelectionProduit";
 
 const Home = () => {
   return (
-    <div className="home" onScroll={(e)=> scrollWindow(e)}>
+    <div className="home" onScroll={(e) => scrollWindow(e)}>
       <Navigation />
       <BanniereSlide />
 
-     <CategorieDiv />
+      <CategorieDiv />
 
-     <SelectionProduit />
+      <SelectionProduit />
 
       <div className="selectionAvis">
         <h2>AVIS</h2>
@@ -26,9 +26,8 @@ const Home = () => {
                 <li className='cardAvis'></li>
                 <li className='cardAvis'></li>
             </ul> */}
-        <Slider />
       </div>
-
+      <Slider />
       <Footer />
     </div>
   );

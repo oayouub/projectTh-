@@ -1,6 +1,6 @@
 import React from 'react';
 import {Swiper, SwiperSlide } from 'swiper/react';
-import { FreeMode, Pagination } from "swiper"
+import { Navigation, Pagination } from "swiper"
 import 'swiper/css';
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
@@ -12,12 +12,13 @@ const Slider = () => {
     return (
       <div className="container py-2 px-2 justify-content-center  ">
         <Swiper
-        freeMode={true}
+       
         grabCursor={true}
+        navigation={true}
         pagination={{
             clickable: true,
           }}
-        modules={[FreeMode, Pagination]}
+        modules={[Navigation,Pagination]}
         className="mySwiper"
         slidesPerView={3}
         spaceBetween={0}

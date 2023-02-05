@@ -27,6 +27,7 @@ const BanniereSlide = () => {
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
+        
       >
         <SwiperSlide><div className="sectionBanniere">
         <img src="./img/BANNIERE.png" alt="img" />

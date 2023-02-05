@@ -1,4 +1,9 @@
 
+// .swiper-slide
+// {
+//     width: 400px !important;
+// }
+
 .bodySlider
 {
     
@@ -7,6 +12,7 @@
     justify-content: center;
     background-color: $color2;
     padding: 20px 0 20px 0;
+   
    .slider-container
    {
   
@@ -14,7 +20,7 @@
 
    .slider-content
    {
-    margin: 0 40px;
+    
     .cardProduit
     {
         width: 320px;
