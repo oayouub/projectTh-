@@ -7,13 +7,18 @@
     }
     .divider
     {
+        opacity: 0;
         padding: 40px;
-        padding-left: 140px;
-        padding-right: 140px;
+        padding-left: 640px;
+        padding-right: 640px;
+        transition: 0.5s;
         @include displayFlex-JCC-AIC;
+
+      
 
        &::after,&::before
         {
+            
             content: '';
             flex-grow: 1;
             height: 3px;
@@ -30,7 +35,12 @@
         }
     }
 
-    
+    .divider.active
+    {
+        opacity: 1;
+        padding-left: 140px;
+        padding-right: 140px;
+    }
 
     .preparation-container
     {
