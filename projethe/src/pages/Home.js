@@ -6,6 +6,7 @@ import Slider from "../components/Slider";
 import scrollWindow from "../components/Navigation";
 import CategorieDiv from "../components/CategorieDiv";
 import SelectionProduit from "../components/SelectionProduit";
+import ReturnTop from "../components/ReturnTop";
 
 const Home = () => {
   return (
@@ -28,6 +29,7 @@ const Home = () => {
       </div>
       <Slider />
       <Footer />
+      <ReturnTop />
     </div>
   );
 };

@@ -1,0 +1,12 @@
+.topbtn{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: $color5;
+    border: 1px solid $color2;
+    position: fixed;
+    z-index: 20;
+    right: 20px;
+    bottom: 20px;
+    transition: 0.3s;
+}
