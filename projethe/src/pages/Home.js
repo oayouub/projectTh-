@@ -1,6 +1,5 @@
 import React from "react";
 import BanniereSlide from "../components/BanniereSlide";
-import Card from "../components/Card";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 import Slider from "../components/Slider";
@@ -10,7 +9,7 @@ import SelectionProduit from "../components/SelectionProduit";
 
 const Home = () => {
   return (
-    <div className="home" onScroll={(e) => scrollWindow(e)}>
+    <div className="home">
       <Navigation />
       <BanniereSlide />
 

@@ -7,18 +7,20 @@ const Navigation = () => {
 
     let lastScroll = 0;
     const scrollWindow = (e) =>{
-        console.log(window.scrollY);
+        
         if(window.scrollY > lastScroll){
-            setScroll(false);
+            setScroll(true);
         }else{
-            setScroll(true)
+            setScroll(false)
         };
-        lastScroll = window.scrollY;
+       
         
     }
+    window.addEventListener('scroll', scrollWindow);
+  
 
     return (
-        <div className='navbar'  style={{ top: scroll ? "0" : "0" }}>
+        <div className='navbar' style={{ top: scroll ? "-100px" : "0" }}>
             <div className="navbarTop">
                 <ul>
                     <li id='logo'><img src="./img/logo.png" alt="img
