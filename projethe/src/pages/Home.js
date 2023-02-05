@@ -1,16 +1,16 @@
 import React from "react";
 import BanniereSlide from "../components/BanniereSlide";
-import Card from "../components/Card";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 import Slider from "../components/Slider";
 import scrollWindow from "../components/Navigation";
 import CategorieDiv from "../components/CategorieDiv";
 import SelectionProduit from "../components/SelectionProduit";
+import ReturnTop from "../components/ReturnTop";
 
 const Home = () => {
   return (
-    <div className="home" onScroll={(e) => scrollWindow(e)}>
+    <div className="home">
       <Navigation />
       <BanniereSlide />
 
@@ -29,6 +29,7 @@ const Home = () => {
       </div>
       <Slider />
       <Footer />
+      <ReturnTop />
     </div>
   );
 };
