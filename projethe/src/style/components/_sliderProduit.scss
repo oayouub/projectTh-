@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: center;
     background-color: $color2;
-    padding: 20px 0 20px 0;
+    padding:  80px 50px;
    
    .slider-container
    {
@@ -23,7 +23,8 @@
     
     .cardProduit
     {
-        width: 320px;
+        border-radius: 20px;
+        width: 250px;
         border-radius: 25px;
         background-color: #fff;
         .image-content
@@ -44,8 +45,10 @@
                 top: 0;
                 height: 100%;
                 width: 100%;
-                background-color: #4070F4;
-                border-radius: 25px 25px 0 25px;
+                background-color: $color5;
+                overflow: hidden;
+                border-radius: 20px 20px 0 0 ;
+                
                 
                 &::before,&::after
                 {
@@ -55,7 +58,7 @@
                     bottom: -40px;
                     height: 40px;
                     width: 40px;
-                    background-color: #4070F4;
+                    background-color: $color5;
                     
 
                 }
@@ -107,7 +110,7 @@
                     font-size: 16px;
                     color:#fff;
                     padding: 8px 16px;
-                    background-color: #4070F4;
+                    background-color: $color5;
                     border-radius: 6px;
                     margin: 14px;
                     cursor: pointer;
@@ -115,7 +118,7 @@
 
                     &:hover
                     {
-                    background: #265df2;
+                    background: $color4;
                     }
 
 

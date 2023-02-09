@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 13vh;
+    height: 15vh;
     ul{
         display: flex;
         list-style: none;
@@ -51,21 +51,25 @@
     
 }
 .navbarBot{
-    background-color: $color4;
+    background-color: $color6;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 5vh;
+    letter-spacing: 1px;
 
     ul{
         display: flex;
         list-style: none;
         justify-content: space-between;
         width: 20%;
-        color: white;
+        color: $color4;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
        
-        
+        li{
+           
+            text-align: center;
+        }
         :hover{
             color: $color3;
             cursor: pointer;
@@ -74,6 +78,15 @@
         
         #solde{
             color: $color3;
+            background-color: $color4;
+            border-radius: 10px;
+            padding: 1px 10px;
+            
+            :hover{
+                color: $color4;
+                background-color: $color3;
+    
+            }
         }
 
     }

@@ -18,15 +18,7 @@ const Home = () => {
 
       <SelectionProduit />
 
-      <div className="selectionAvis">
-        <h2>AVIS</h2>
-        {/* <ul>
-                <li className='cardAvis'></li>
-                <li className='cardAvis'></li>
-                <li className='cardAvis'></li>
-                <li className='cardAvis'></li>
-            </ul> */}
-      </div>
+     
       <Slider />
       <Footer />
       <ReturnTop />
