@@ -2,6 +2,7 @@
 
 
 .ProduitContainer{
+    margin-top: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,8 +19,8 @@
 
     img{
       
-        height: 350px;
-        width: 350px;       
+        height: 550px;
+        width: 550px;       
         object-fit: cover;
         border-radius: 10px;
         
@@ -28,8 +29,8 @@
       
     .infoLeft-container
     {
-        height: 350px;
-        width: 350px;
+        height: 550px;
+        width: 550px;
         border: 1px solid $color5;
         background: $color5;
 
