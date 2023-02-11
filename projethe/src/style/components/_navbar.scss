@@ -44,7 +44,7 @@
             height: 25px;
             width: 400px;
             text-align: center;
-            background: $color2;
+            background: $color6;
             border-radius: 5px;
             border: none;
         }
@@ -70,11 +70,11 @@
         li{
            
             text-align: center;
-        }
-        :hover{
-            color: $color3;
-            cursor: pointer;
-            transition: 0.2s;
+            &:hover{
+                color: $color3;
+                cursor: pointer;
+                transition: 0.2s;
+            }
         }
         
         #solde{
@@ -83,7 +83,7 @@
             border-radius: 10px;
             padding: 1px 10px;
             
-            :hover{
+            &:hover{
                 color: $color4;
                 background-color: $color3;
     

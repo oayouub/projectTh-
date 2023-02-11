@@ -5,7 +5,7 @@ const Card = () => {
         <div>
             <li className='card'>
                 <img src="" alt="" />
-                <h2>Name</h2>
+                <h2 className='cardName'>Name</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <button>AJOUTER</button>
             </li>
