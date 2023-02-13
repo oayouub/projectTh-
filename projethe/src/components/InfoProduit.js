@@ -4,7 +4,7 @@ const InfoProduit = () => {
   const [dividerBar, setDividerBar] = useState(false);
 
   const changeDivider = () => {
-    if (window.scrollY >= 150) {
+    if (window.scrollY >= 200) {
       console.log(window.scrollY);
       setDividerBar(true);
     } else {
