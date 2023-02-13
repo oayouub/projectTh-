@@ -20,7 +20,7 @@ const Navigation = () => {
   
 
     return (
-        <div className='navbar' style={{ top: scroll ? "-100px" : "0" }}>
+        <div className='navbar' style={{ top: scroll ? "-15vh" : "0" }}>
             <div className="navbarTop">
                 <ul>
                     <li id='logo'><img src="./img/logo.png" alt="img

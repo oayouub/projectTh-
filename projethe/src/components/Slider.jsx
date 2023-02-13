@@ -20,7 +20,7 @@ const Slider = () => {
           }}
         modules={[Navigation,Pagination]}
         className="mySwiper"
-        slidesPerView={3}
+        slidesPerView={4}
         spaceBetween={0}
         >
             <SwiperSlide>

@@ -4,12 +4,13 @@
     width: 100%;
     z-index: 10;
     transition: 0.3s;
+    box-shadow: 0px 0px 9px 0px rgb(0 0 0 / 25%);
 .navbarTop{
     background-color: $color5;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 13vh;
+    height: 15vh;
     ul{
         display: flex;
         list-style: none;
@@ -43,7 +44,7 @@
             height: 25px;
             width: 400px;
             text-align: center;
-            background: $color2;
+            background: $color6;
             border-radius: 5px;
             border: none;
         }
@@ -51,29 +52,42 @@
     
 }
 .navbarBot{
-    background-color: $color4;
+    background-color: $color6;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 5vh;
+    letter-spacing: 1px;
 
     ul{
         display: flex;
         list-style: none;
         justify-content: space-between;
         width: 20%;
-        color: white;
+        color: $color4;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
        
-        
-        :hover{
-            color: $color3;
-            cursor: pointer;
-            transition: 0.2s;
+        li{
+           
+            text-align: center;
+            &:hover{
+                color: $color3;
+                cursor: pointer;
+                transition: 0.2s;
+            }
         }
         
         #solde{
             color: $color3;
+            background-color: $color4;
+            border-radius: 10px;
+            padding: 1px 10px;
+            
+            &:hover{
+                color: $color4;
+                background-color: $color3;
+    
+            }
         }
 
     }
