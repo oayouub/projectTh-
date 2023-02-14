@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from "axios";
+import Card from "./Card";
+
 
 const Filter = () => {
+    const [data, setData] = useState([]);
+
+
+    useEffect(() => {
+        axios
+          .get("http://localhost:5000")
+          .then((res) => setData(res.data));
+      }, []);
+
     return (
+        <div className='filterPageContainer'>
         <div className='filter'>
             <ul>
                 <h3>COULEUR DE THÉ</h3>
@@ -63,8 +76,17 @@ const Filter = () => {
                 <li><h3>ORDRE</h3></li>
                 </ul>
             </div>
+
+            </div>
+            <ul className='cardContainerFilter'>
+                {data
+                .map((produit, index) => (
+                    <Card key={index} produit={produit} />
+                ))}
             
+            </ul>
         </div>
+        
     );
 };
 

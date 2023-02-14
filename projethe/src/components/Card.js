@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Card = () => {
+const Card = ({ produit }) => {
     return (
         <div>
             <li className='card'>
                 <img src="" alt="" />
-                <h2 className='cardName'>Name</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2 className='cardName'>{produit.name}</h2>
+                <p>{produit.description}</p>
                 <button>AJOUTER</button>
             </li>
         </div>

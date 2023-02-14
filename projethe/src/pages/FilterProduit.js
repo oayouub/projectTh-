@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Filter from '../components/Filter';
 import Navigation from '../components/Navigation';
 
@@ -7,6 +8,7 @@ const FilterProduit = () => {
         <div className='filtrePage'>
             <Navigation />
             <Filter />
+           
         </div>
     );
 };
