@@ -62,7 +62,8 @@ const Filter = () => {
             </div>
 
             </div>
-            <ul className='cardContainerFilter'>
+            <div className='cardContainerFilter'>
+            <ul>
                 {data
                 .filter((produit) => produit.color[0].includes(checkedColor))
                 .map((produit, index) => (
@@ -70,6 +71,7 @@ const Filter = () => {
                 ))}
             
             </ul>
+            </div>
         </div>
         
     );

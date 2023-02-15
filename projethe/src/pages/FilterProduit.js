@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from "../components/Footer";
 
 import Filter from '../components/Filter';
 import Navigation from '../components/Navigation';
@@ -8,6 +9,7 @@ const FilterProduit = () => {
         <div className='filtrePage'>
             <Navigation />
             <Filter />
+            <Footer />
            
         </div>
     );

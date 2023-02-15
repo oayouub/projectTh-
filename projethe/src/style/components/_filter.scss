@@ -2,7 +2,9 @@
 .filtrePage{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 .filterPageContainer{
     width: 60%;
@@ -14,9 +16,10 @@
 .filter{
     margin-top: 25vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: flex-start;
-    gap: 50px;
+    gap: 100px;
+  
     background-color: $color4;
     
     border-radius: 10px;
@@ -42,5 +45,18 @@
     }
 }
 .cardContainerFilter{
-    width: 100%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    ul{
+        width: 100%;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
 }}
