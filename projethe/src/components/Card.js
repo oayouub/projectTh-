@@ -4,7 +4,7 @@ const Card = ({ produit }) => {
     return (
         <div>
             <li className='card'>
-                <img src="" alt="" />
+                <img src={produit.picture} alt="" />
                 <h2 className='cardName'>{produit.name}</h2>
                 <p>{produit.description}</p>
                 <button>AJOUTER</button>
