@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 
 import Filter from '../components/Filter';
 import Navigation from '../components/Navigation';
+import ReturnTop from '../components/ReturnTop';
 
 const FilterProduit = () => {
     return (
@@ -10,6 +11,7 @@ const FilterProduit = () => {
             <Navigation />
             <Filter />
             <Footer />
+            <ReturnTop />
            
         </div>
     );

@@ -5,10 +5,12 @@ import Card from "./Card";
 
 const Filter = () => {
     const [data, setData] = useState([]);
-    const checkColor = ["Noir", "Vert", "Blanc", "Jaune", "Maté"];
-    const checkParfums = ["Classique", "Agrume", "Fruité", "Floral"];
+    const checkColor = ['', "Noir", "Vert", "Blanc", "Jaune", "Maté"];
+    const checkParfums = ['', "Classique", "Agrume", "Fruité", "Floral"];
+    const [rangeValue, setRangeValue] = useState(30);
     const [checkedColor, setCheckedColor] = useState("");
     const [checkedParfums, setCheckedParfums] = useState("");
+    
 
 
     useEffect(() => {
@@ -52,20 +54,50 @@ const Filter = () => {
             </ul>
        
     
-            <div className='rightFilter'>
+           
                 <ul>
                     <li>
                <h3>PRIX</h3>
-                <input type="range" id='filtreRange' /></li>
-                <li><h3>ORDRE</h3></li>
+                <input 
+                type="range" 
+                id='filtreRange'
+                min="10"
+                max="50"
+                defaultValue={rangeValue}
+                onChange={(e) => setRangeValue(e.target.value)}/><p>max {rangeValue} €</p></li>
                 </ul>
-            </div>
+
+                <ul>
+                <h3>ORDRE</h3>
+                <li>
+                <input
+              type="radio"
+              id='croissant'
+              name="orderRadio"
+              onChange={data.sort((a, b) => b.price - a.price)}
+              />
+            <label htmlFor='croissant'>croissant</label>
+               </li>
+                <li>
+                <input
+              type="radio"
+              id='decroissant'
+              name="orderRadio"
+              onChange={data.sort((a, b) => a.price - b.price)}
+              />
+            <label htmlFor='decroissant'>decroissant</label>
+               </li>
+                </ul>
+         
 
             </div>
             <div className='cardContainerFilter'>
             <ul>
                 {data
                 .filter((produit) => produit.color[0].includes(checkedColor))
+                .filter((produit) => produit.parfums[0].includes(checkedParfums))
+                .filter((produit) => produit.price <= rangeValue)
+              
                 .map((produit, index) => (
                     <Card key={index} produit={produit} />
                 ))}
