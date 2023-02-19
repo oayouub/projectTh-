@@ -95,7 +95,7 @@ const ContainProduit = () => {
         </div>
 
         <div className="ingredient-container">
-          <div className="text-infoProduit">Ingredient</div>
+          <div className="text-infoProduit">Ingredients</div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
             itaque doloribus saepe tenetur eum! Perferendis minus tempore itaque
