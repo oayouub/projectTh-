@@ -14,8 +14,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 80%;
-        background-color: $color4;
+        width: 60%;
+        background-color: $color5; 
+        
         // box-shadow: 0px 0px 9px 0px rgb(0 0 0 / 25%);
         // width: 70%;
         border-radius: 5px 5px 5px 5px;
@@ -30,7 +31,7 @@
             color: $color6;
             gap: 30px;
             padding: 0 50px;
-            width: 50%;
+            width: 80%;
             
             li{
                 display: flex;
@@ -39,7 +40,7 @@
             img{
                 max-width: 80px;
                 max-height: 80px;
-                border-radius: 100px;
+                border-radius: 10px;
             }
         }
         }

@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import ContainProduit from "../components/ContainProduit";
 import InfoProduit from "../components/InfoProduit";
 import Navigation from "../components/Navigation";
