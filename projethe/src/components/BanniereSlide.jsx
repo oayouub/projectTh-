@@ -31,40 +31,25 @@ const BanniereSlide = () => {
       >
         <SwiperSlide><div className="sectionBanniere">
         <img src="./img/BANNIERE.png" alt="img" />
-        <button>DÉCOUVRIR</button>
+        <button className='banniereVert'>DÉCOUVRIR</button>
       </div></SwiperSlide>
         <SwiperSlide><div className="sectionBanniere">
-        <img src="./img/BANNIERE.png" alt="img" />
-        <button>DÉCOUVRIR</button>
+        <img src="./img/BANNIERE_noir.png" alt="img" />
+        <button className='banniereNoir'>DÉCOUVRIR</button>
       </div></SwiperSlide>
         <SwiperSlide><div className="sectionBanniere">
-        <img src="./img/BANNIERE.png" alt="img" />
-        <button>DÉCOUVRIR</button>
+        <img src="./img/BANNIERE_blanc.png" alt="img" />
+        <button className='banniereBlanc'>DÉCOUVRIR</button>
       </div></SwiperSlide>
         <SwiperSlide><div className="sectionBanniere">
-        <img src="./img/BANNIERE.png" alt="img" />
-        <button>DÉCOUVRIR</button>
+        <img src="./img/BANNIERE_jaune.png" alt="img" />
+        <button className='banniereJaune'>DÉCOUVRIR</button>
       </div></SwiperSlide>
         <SwiperSlide><div className="sectionBanniere">
-        <img src="./img/BANNIERE.png" alt="img" />
-        <button>DÉCOUVRIR</button>
+        <img src="./img/BANNIERE_mate.png" alt="img" />
+        <button className='banniereMate'>DÉCOUVRIR</button>
       </div></SwiperSlide>
-        <SwiperSlide><div className="sectionBanniere">
-        <img src="./img/BANNIERE.png" alt="img" />
-        <button>DÉCOUVRIR</button>
-      </div></SwiperSlide>
-        <SwiperSlide><div className="sectionBanniere">
-        <img src="./img/BANNIERE.png" alt="img" />
-        <button>DÉCOUVRIR</button>
-      </div></SwiperSlide>
-        <SwiperSlide><div className="sectionBanniere">
-        <img src="./img/BANNIERE.png" alt="img" />
-        <button>DÉCOUVRIR</button>
-      </div></SwiperSlide>
-        <SwiperSlide><div className="sectionBanniere">
-        <img src="./img/BANNIERE.png" alt="img" />
-        <button>DÉCOUVRIR</button>
-      </div></SwiperSlide>
+       
       </Swiper>
         </div>
     );
