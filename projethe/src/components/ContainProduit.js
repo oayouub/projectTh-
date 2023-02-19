@@ -1,10 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { useParams } from "react-router-dom";
 
 const ContainProduit = () => {
-  let [number, setNumber] = useState(2);
-  let [basePrice, setBasePrice] = useState(2);
+  let [number, setNumber] = useState(0);
+  let [basePrice, setBasePrice] = useState(0);
   let [count, setCount] = useState(1);
-  const isMultiply = false;
+ 
+  const {id} = useParams();
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    if(!id) {
+      return;
+    }
+    axios
+      .get(`http://localhost:5000/${id}`)
+      .then((res) => setData(res.data));
+  }, [id]);
+
+  if (!data) return '';
 
   const number50g = () => {
     setCount((count = 1));
@@ -52,13 +67,13 @@ const ContainProduit = () => {
   return (
     <div className="ProduitContainer">
       <div className="ImgProduit-container">
-        <img src="./img/thenoir.webp" alt="theNoirImg" />
+        <img src={data.picture} alt="theNoirImg" />
       </div>
 
       <div className="infoLeft-container">
         <div className="title-produit">
-          <h2>Nom du produit</h2>
-          <p>Description du produit</p>
+          <h2>{data.name}</h2>
+          <p>{data.description}</p>
         </div>
 
         <div className="quantity-container">
@@ -70,7 +85,7 @@ const ContainProduit = () => {
           </ul>
         </div>
         <div className="price-container">
-          <h2>{number} €</h2>
+          <h2>{data.price + number} €</h2>
 
           <div className="compteur">
             <button onClick={handleDecrement}> - </button>

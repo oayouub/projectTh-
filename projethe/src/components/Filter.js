@@ -83,7 +83,7 @@ const Filter = () => {
               type="radio"
               id='decroissant'
               name="orderRadio"
-              onChange={data.sort((a, b) => a.price - b.price)}
+            //   onChange={data.sort((a, b) => a.price - b.price)}
               />
             <label htmlFor='decroissant'>decroissant</label>
                </li>
