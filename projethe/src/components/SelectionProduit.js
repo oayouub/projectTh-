@@ -6,10 +6,7 @@ const SelectionProduit = () => {
         <div className="selectionProduit">
         <h2>Selection de produits</h2>
         <ul>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+        
         </ul>
       </div>
     );

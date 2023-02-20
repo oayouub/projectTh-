@@ -3,12 +3,12 @@ import axios from "axios";
 import Card from "./Card";
 
 
-const Filter = () => {
+const Filter = ({ checkedColor, setCheckedColor}) => {
     const [data, setData] = useState([]);
     const checkColor = ['', "Noir", "Vert", "Blanc", "Jaune", "Maté"];
     const checkParfums = ['', "Classique", "Agrume", "Fruité", "Floral"];
     const [rangeValue, setRangeValue] = useState(30);
-    const [checkedColor, setCheckedColor] = useState("");
+ 
     const [checkedParfums, setCheckedParfums] = useState("");
     
 

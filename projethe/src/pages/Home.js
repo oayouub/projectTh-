@@ -9,7 +9,7 @@ import SelectionProduit from "../components/SelectionProduit";
 import ReturnTop from "../components/ReturnTop";
 import axios from "axios";
 
-const Home = () => {
+const Home = ({ checkedColor, setCheckedColor}) => {
   const [data, setData] = useState([]);
 
 
@@ -26,7 +26,7 @@ const Home = () => {
 
       <CategorieDiv />
 
-      {/* <SelectionProduit /> */}
+      <SelectionProduit />
 
      
       <Slider />

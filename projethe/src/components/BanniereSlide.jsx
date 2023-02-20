@@ -25,29 +25,74 @@ const BanniereSlide = () => {
           clickable: true,
         }}
         navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        // modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
         
       >
         <SwiperSlide><div className="sectionBanniere">
         <img src="./img/BANNIERE.png" alt="img" />
-        <button className='banniereVert'>DÉCOUVRIR</button>
+        <div className='banniereVert'>
+        <div className='Right'>
+          <img src="./img/banniere_img_vert.png" alt="" />
+        </div>
+        <div className='Left'>
+        <h4>Selection de</h4>
+        <h2>THÉ VÉRT</h2>
+        <button id='vert'>DÉCOUVRIR</button>
+        </div>
+        </div>
       </div></SwiperSlide>
         <SwiperSlide><div className="sectionBanniere">
         <img src="./img/BANNIERE_noir.png" alt="img" />
-        <button className='banniereNoir'>DÉCOUVRIR</button>
+        <div className='banniereVert'>
+        <div className='Right'>
+          <img src="./img/banniere_img_noir.png" alt="" />
+        </div>
+        <div className='Left'>
+        <h4>Selection de</h4>
+        <h2>THÉ NOIR</h2>
+        <button id='noir'>DÉCOUVRIR</button>
+        </div>
+        </div>
       </div></SwiperSlide>
         <SwiperSlide><div className="sectionBanniere">
         <img src="./img/BANNIERE_blanc.png" alt="img" />
-        <button className='banniereBlanc'>DÉCOUVRIR</button>
+        <div className='banniereVert'>
+        <div className='Right'>
+          <img src="./img/banniere_img_blanc.png" alt="" />
+        </div>
+        <div className='Left'>
+        <h4 id='h4blanc'>Selection de</h4>
+        <h2 id='h2blanc'>THÉ BLANC</h2>
+        <button id='blanc'>DÉCOUVRIR</button>
+        </div>
+        </div>
       </div></SwiperSlide>
         <SwiperSlide><div className="sectionBanniere">
         <img src="./img/BANNIERE_jaune.png" alt="img" />
-        <button className='banniereJaune'>DÉCOUVRIR</button>
+        <div className='banniereVert'>
+        <div className='Right'>
+          <img src="./img/banniere_img_jaune.png" alt="" />
+        </div>
+        <div className='Left'>
+        <h4 id='h4jaune'>Selection de</h4>
+        <h2 id='h2jaune'>THÉ JAUNE</h2>
+        <button id='jaune'>DÉCOUVRIR</button>
+        </div>
+        </div>
       </div></SwiperSlide>
         <SwiperSlide><div className="sectionBanniere">
         <img src="./img/BANNIERE_mate.png" alt="img" />
-        <button className='banniereMate'>DÉCOUVRIR</button>
+        <div className='banniereVert'>
+        <div className='Right'>
+          <img src="./img/banniere_img-mate.png" alt="" />
+        </div>
+        <div className='Left'>
+        <h4>Selection de</h4>
+        <h2>THÉ MATÉ</h2>
+        <button id='maté'>DÉCOUVRIR</button>
+        </div>
+        </div>
       </div></SwiperSlide>
        
       </Swiper>
