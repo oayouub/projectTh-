@@ -6,49 +6,47 @@ const ContainProduit = () => {
   let [number, setNumber] = useState(0);
   let [basePrice, setBasePrice] = useState(0);
   let [count, setCount] = useState(1);
- 
-  const {id} = useParams();
+
+  const { id } = useParams();
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    if(!id) {
+    if (!id) {
       return;
     }
-    axios
-      .get(`http://localhost:5000/${id}`)
-      .then((res) => setData(res.data));
+    axios.get(`http://localhost:5000/${id}`).then((res) => setData(res.data));
   }, [id]);
 
-  if (!data) return '';
+  if (!data) return "";
 
   const number50g = () => {
     setCount((count = 1));
-    number = 2;
-    basePrice = 2;
+    number = 0;
+    basePrice = data.price;
     setNumber(number);
     setBasePrice(basePrice);
   };
 
   const number100g = () => {
     setCount((count = 1));
-    number = 2;
-    basePrice = 2;
-    setNumber(number * 2);
-    setBasePrice(basePrice * 2);
+    number = data.price;
+    basePrice = data.price * 2;
+    setNumber(number);
+    setBasePrice(basePrice);
   };
   const number200g = () => {
     setCount((count = 1));
-    number = 2;
-    basePrice = 2;
-    setNumber(number * 2.5);
-    setBasePrice(basePrice * 2.5);
+    number = data.price;
+    basePrice = data.price * 2;
+    setNumber(number * 3);
+    setBasePrice(basePrice * 2);
   };
   const number400g = () => {
     setCount((count = 1));
-    number = 2;
-    basePrice = 2;
-    setNumber(number * 3);
-    setBasePrice(basePrice * 3);
+    number = data.price;
+    basePrice = data.price * 2;
+    setNumber(number * 4);
+    setBasePrice(basePrice * 2);
   };
 
   const handleIncrement = () => {
