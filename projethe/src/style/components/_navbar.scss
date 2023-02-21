@@ -22,6 +22,7 @@
         
         img{
             width: 100%;
+            max-width: 90px;
         }
         #logo{
             width: 100%;
@@ -33,21 +34,72 @@
             align-items: center ;
             justify-content: center;
         }
-        li{
-            max-width: 90px;
+      
+
+        .recherche{
+       
             
-        }
-        input{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            height: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           
             width: 400px;
-            text-align: center;
-            background: $color6;
-            border-radius: 5px;
-            border: none;
+
+           .rechercheInput{
+            display: grid;
+            grid-template-columns: 92% 8%;
+            width: 100%;
+            
+            input{
+                
+                height: 25px;
+                width: 400px;
+                text-align: center;
+                background: $color6;
+                border-radius: 5px;
+                
+                border: none;
+            }
+            #clearBtn{
+                cursor: pointer;
+                color: $color5;
+            }
+            #searchBtn{
+                color: $color5;
+            }
+           }
+            .resultats{
+               
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                width: 400px;
+                
+                background: $color6;
+                border-radius: 5px;
+                border: none;
+                background-color: $color6;
+                color: $color5;
+                padding: 5px;
+                overflow: hidden;
+                overflow-y: auto;
+                height: 100px;
+
+                &::-webkit-scrollbar{
+                    display: none;
+                }
+
+                .lisearch{
+                    width: 390px;
+                   cursor: pointer;
+                   transition: 0.1s;
+                   &:hover{
+                    background-color: $color3;
+                   }
+
+                }
+            }
         }
     }
     

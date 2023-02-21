@@ -25,7 +25,7 @@ const BanniereSlide = () => {
           clickable: true,
         }}
         navigation={true}
-        // modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
         
       >
