@@ -18,13 +18,16 @@ const PanierProduit = () => {
   };
   function displayItem(item) {
     const article = makeArticle(item);
-    //displayArticle(article);
+    displayArticle(article);
     console.log(article);
-    const image = makeImage(item);
+    const div = makeImageDiv(item);
+    article.appendChild(div);
   }
 
   function displayArticle(article) {
-    document.querySelector("#cart__items").appendChild(article);
+    setTimeout(() => {
+      document.querySelector("#cart__items").appendChild(article);
+    }, 1000);
   }
 
   const makeArticle = (item) => {
@@ -34,10 +37,13 @@ const PanierProduit = () => {
     return article;
   };
 
-  const makeImage = (item) => {
+  const makeImageDiv = (item) => {
+    const div = document.createElement("div");
+    div.classList.add("cart__item__img");
     const image = document.createElement("img");
     image.src = item.panierImg;
-    return image;
+    div.appendChild(image);
+    return div;
   };
 
   return (
