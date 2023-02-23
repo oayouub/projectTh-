@@ -21,8 +21,34 @@ const PanierProduit = () => {
     displayArticle(article);
     console.log(article);
     const div = makeImageDiv(item);
-    article.appendChild(div);
+
+    const cardItemContent = makeCardItemContent(item);
+
+    setTimeout(() => {
+      article.appendChild(div);
+      article.appendChild(cardItemContent);
+    }, 1000);
   }
+
+  const makeCardItemContent = (item) => {
+    const div = document.createElement("div");
+    div.classList.add("card__item_content");
+
+    const description = document.createElement("div");
+    description.classList.add("cart__item__content__description");
+
+    const h2 = document.createElement("h2");
+    h2.textContent = item.nomProduit;
+
+    const p = document.createElement("p");
+    p.textContent = item.totalPrice + " €";
+
+    description.appendChild(h2);
+    description.appendChild(p);
+    div.appendChild(description);
+
+    return div;
+  };
 
   function displayArticle(article) {
     setTimeout(() => {
