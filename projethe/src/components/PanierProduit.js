@@ -30,6 +30,15 @@ const PanierProduit = () => {
     }, 1000);
   }
 
+  const addDeleteButton = (item) => {
+    const div = document.createElement("div");
+    div.classList.add("delete-button-container");
+    const button = document.createElement("button");
+    button.textContent = "Supprimer";
+    div.appendChild(button);
+    item.appendChild(div);
+  };
+
   const makeCardItemContent = (item) => {
     const div = document.createElement("div");
     div.classList.add("card__item_content");
@@ -43,12 +52,45 @@ const PanierProduit = () => {
     const p = document.createElement("p");
     p.textContent = item.totalPrice + " €";
 
+    const pIngredient = document.createElement("p");
+    pIngredient.textContent = item.ingredient;
+
+    const button = document.createElement("button");
+    button.textContent = "Supprimer";
+    button.addEventListener("click", () => deleteItem(item));
+
     description.appendChild(h2);
     description.appendChild(p);
+    description.appendChild(pIngredient);
+    description.appendChild(button);
+
     div.appendChild(description);
 
     return div;
   };
+
+  const deleteItem = (item) => {
+    const itemToDelete = cart.findIndex((produit) => produit.id === item.id);
+    console.log("item to DeleteGang", itemToDelete);
+    cart.splice(itemToDelete, 1);
+    DeleteDataFromCache(item);
+    // DeleteArticleFromDom(item);
+  };
+  const DeleteDataFromCache = (item) => {
+    const key = `${item.id}`;
+    localStorage.removeItem(key);
+    window.location.reload(false);
+  };
+  // const DeleteArticleFromDom = (item) => {
+  //   const articlToDelete = document.querySelector(
+  //     `article[data-id="${item.id}]`
+  //   );
+
+  //   setTimeout(() => {
+  //     articlToDelete.remove();
+  //   }, 1000);
+
+  // };
 
   function displayArticle(article) {
     setTimeout(() => {

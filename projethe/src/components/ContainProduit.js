@@ -13,6 +13,7 @@ const ContainProduit = () => {
   const totalPrice = data.price + number;
   const panierImg = data.picture;
   const nomProduit = data.name;
+  const ingredient = data.description;
 
   const newData = {
     id: id,
@@ -20,6 +21,7 @@ const ContainProduit = () => {
     count: count,
     panierImg: panierImg,
     nomProduit: nomProduit,
+    ingredient: ingredient,
   };
 
   useEffect(() => {
