@@ -1,13 +1,15 @@
-.home{position: relative;}
+.home{position: relative;
+width: 100vw;}
 
 .sectionBanniere{
     margin-top: 20vh;
-    width: 100%;
+    width: 100vw;
     height: 70vh;
     overflow: hidden;
     position: relative;
     display: flex;
     justify-content: flex-end;
+
     img{
         max-width: 100vw;
     }
@@ -20,12 +22,19 @@
         position: absolute;
         left: 1px;
         top :1px;
-        width: 100%;
+        width: 100vw;
+        @media screen and (max-width: 721px) {
+         top: 30%;
+         left: 30%;
+          
+        }
         .Right{
             display: flex;
             justify-content: center;
             width: 100%;
-          
+            @media screen and (max-width: 721px) {
+                display: none;
+            }
         }
         .Left{
             display: flex;
@@ -63,6 +72,7 @@
                 background-color: $color5;
                 color: $color2;
                 width: 40%;
+                min-width: 200px;
                 padding: 15px;
                 border-radius: 5px;
                 font-size: 1rem;
@@ -81,6 +91,7 @@
                 background-color: rgb(233, 233, 123);
                 color: black;
                 width: 40%;
+                min-width: 200px;
                 padding: 15px;
                 border-radius: 5px;
                 font-size: 1rem;
@@ -99,6 +110,7 @@
                 background-color: rgb(102, 194, 59);
                 color: whitesmoke;
                 width: 40%;
+                min-width: 200px;
                 padding: 15px;
                 border-radius: 5px;
                 font-size: 1rem;
@@ -117,6 +129,7 @@
                 background-color: rgb(243, 191, 78);
                 color: whitesmoke;
                 width: 40%;
+                min-width: 200px;
                 padding: 15px;
                 border-radius: 5px;
                 font-size: 1rem;
@@ -135,6 +148,7 @@
                 background-color: rgb(78, 136, 243);
                 color: whitesmoke;
                 width: 40%;
+                min-width: 200px;
                 padding: 15px;
                 border-radius: 5px;
                 font-size: 1rem;

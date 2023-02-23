@@ -24,7 +24,7 @@ const Home = ({ checkedColor, setCheckedColor}) => {
       <Navigation />
       <BanniereSlide />
 
-      <CategorieDiv />
+      {/* <CategorieDiv /> */}
 
       <SelectionProduit />
 

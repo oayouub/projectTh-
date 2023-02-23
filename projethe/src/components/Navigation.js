@@ -93,10 +93,10 @@ const handleFilter = (event) => {
             </div>
             <div className="navbarBot">
                 <ul>
-                <NavLink to="/filterproduit">
+                <NavLink className='navliste' to="/filterproduit">
                     <li id='solde'>SOLDE</li>
                     </NavLink>
-                    <NavLink to="/filterproduit">
+                    <NavLink className='navliste' to="/filterproduit">
                     <li>THÉ</li>
                     </NavLink>
                     <li>A PROPOS</li>

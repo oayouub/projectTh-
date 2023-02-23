@@ -6,7 +6,7 @@ const Card = ({ produit }) => {
 
     return (
         <div>
-            <NavLink to={'/produit/'+ produit._id}>
+            <NavLink className='card' to={'/produit/'+ produit._id}>
             <li className='card' >
                 <img src={produit.picture} alt="" />
                 <h2 className='cardName'>{produit.name}</h2>
