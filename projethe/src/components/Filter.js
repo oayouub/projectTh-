@@ -67,27 +67,7 @@ const Filter = ({ checkedColor, setCheckedColor}) => {
                 onChange={(e) => setRangeValue(e.target.value)}/><p>max {rangeValue} €</p></li>
                 </ul>
 
-                <ul>
-                <h3>ORDRE</h3>
-                <li>
-                <input
-              type="radio"
-              id='croissant'
-              name="orderRadio"
-              onChange={data.sort((a, b) => b.price - a.price)}
-              />
-            <label htmlFor='croissant'>croissant</label>
-               </li>
-                <li>
-                <input
-              type="radio"
-              id='decroissant'
-              name="orderRadio"
-            //   onChange={data.sort((a, b) => a.price - b.price)}
-              />
-            <label htmlFor='decroissant'>decroissant</label>
-               </li>
-                </ul>
+              
          
 
             </div>

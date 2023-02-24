@@ -10,6 +10,11 @@ width: 100vw;}
     display: flex;
     justify-content: flex-end;
 
+    @media screen and (max-width: 601px) {
+        height: 40vh;
+         
+       }
+
     img{
         max-width: 100vw;
     }

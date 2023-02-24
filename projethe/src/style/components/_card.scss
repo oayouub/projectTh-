@@ -1,10 +1,13 @@
 .card{
+    .cardlink{
+        text-decoration: none;
+    }
     
     
         
         
         
-      
+   
        
         display: flex;
         justify-content: center;
@@ -26,12 +29,22 @@
             min-width: 200px;
            max-height: 400px;
            min-height: 400px;
+           @media screen and (max-width: 501px) {
+            // flex-direction: row;
+            max-width: 300px;
+            min-width: 300px;
+            max-height: 300px;
+            min-height: 300px;
+             }
         }
             
 
 
         img{
             width: 90%;
+            @media screen and (max-width: 501px) {
+                width: 60%;
+                 }
            
 
         }

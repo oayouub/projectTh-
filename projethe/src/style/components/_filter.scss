@@ -17,14 +17,21 @@
 .filter{
     margin-top: 25vh;
     display: grid;
-   grid-template-columns: 25% 25% 25% 25%;
+   grid-template-columns: 33% 33% 33%;
     width: 60%;
   
     background-color: $color5;
     
     border-radius: 10px;
     padding: 20px;
-   
+    @media screen and (max-width: 1001px) {
+        width: 80%;
+        @media screen and (max-width: 501px) {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            }
+        }
 
     ul{
         list-style: none;
@@ -33,6 +40,18 @@
         gap: 5px;
 
         color: $color2;
+
+        @media screen and (max-width: 501px) {
+            flex-direction:row ;
+            gap: 15px;
+            h3{
+                font-size: 0.9rem;
+            }
+            li{
+                font-size: 0.8rem;
+                text-align: center;
+            }
+            }
         
     }
     .rightFilter{
