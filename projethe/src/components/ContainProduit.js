@@ -10,6 +10,20 @@ const ContainProduit = () => {
   const { id } = useParams();
   const [data, setData] = useState([]);
 
+  const totalPrice = data.price + number;
+  const panierImg = data.picture;
+  const nomProduit = data.name;
+  const ingredient = data.description;
+
+  const newData = {
+    id: id,
+    totalPrice: totalPrice,
+    count: count,
+    panierImg: panierImg,
+    nomProduit: nomProduit,
+    ingredient: ingredient,
+  };
+
   useEffect(() => {
     if (!id) {
       return;
@@ -83,7 +97,7 @@ const ContainProduit = () => {
           </ul>
         </div>
         <div className="price-container">
-          <h2>{data.price + number} €</h2>
+          <h2>{totalPrice} €</h2>
 
           <div className="compteur">
             <button onClick={handleDecrement}> - </button>
@@ -102,7 +116,13 @@ const ContainProduit = () => {
           </p>
         </div>
         <div className="pay">
-          <button>Ajouter au panier</button>
+          <button
+            onClick={() => {
+              localStorage.setItem(id, JSON.stringify(newData));
+            }}
+          >
+            Ajouter au panier
+          </button>
         </div>
       </div>
     </div>

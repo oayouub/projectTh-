@@ -1,6 +1,7 @@
 import Home from "./pages/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Produit from "./pages/Produit";
+import Panier from "./pages/Panier";
 import FilterProduit from "./pages/FilterProduit";
 import { useState } from "react";
 
@@ -9,10 +10,26 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home checkedColor={checkedColor} setCheckedColor={setCheckedColor}/>} />
+        <Route
+          path="/"
+          element={
+            <Home
+              checkedColor={checkedColor}
+              setCheckedColor={setCheckedColor}
+            />
+          }
+        />
         <Route path="/produit/:id" element={<Produit />} />
-        <Route path="/filterproduit" element={<FilterProduit checkedColor={checkedColor} setCheckedColor={setCheckedColor}/>} />
-
+        <Route
+          path="/filterproduit"
+          element={
+            <FilterProduit
+              checkedColor={checkedColor}
+              setCheckedColor={setCheckedColor}
+            />
+          }
+        />
+        <Route path="/panier" element={<Panier />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
