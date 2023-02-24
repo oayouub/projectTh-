@@ -32,7 +32,9 @@
             gap: 20px;
             }
         }
-
+h3{
+    color: $color2;
+}
     ul{
         list-style: none;
         display: flex;
@@ -43,7 +45,7 @@
 
         @media screen and (max-width: 501px) {
             flex-direction:row ;
-            gap: 15px;
+            gap: 5%;
             h3{
                 font-size: 0.9rem;
             }
@@ -52,6 +54,42 @@
                 text-align: center;
             }
             }
+        
+    }
+    input[type=checkbox] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -border-radius: 4px;
+        height: 15px;
+        width: 15px;
+        background: #fff;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        &:checked{
+            background: $color4;
+            margin:0px;
+            position: relative;
+            &:before {
+              font-family: FontAwesome;
+              content: '\f00c';
+              display: block;
+              color: grey;
+              font-size: 13px;
+              position: absolute;
+            }
+        }
+    }
+    input[type=range] {
+        cursor: pointer;
+        color: $color4;
+        -webkit-appearance: none;
+        border-radius: 10px;
+        background-color: $color6;
+        box-sizing: border-box;
+        font: inherit;
+        outline: none;
+    
         
     }
     .rightFilter{

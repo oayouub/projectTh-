@@ -22,8 +22,9 @@ const Filter = ({ checkedColor, setCheckedColor}) => {
     return (
         <div className='filterPageContainer'>
         <div className='filter'>
-            <ul>
+            <div className='categoriefiltre'>
                 <h3>COULEUR DE THÉ</h3>
+            <ul>
                 {checkColor.map((color) => (
                 <li><input 
                 type="checkbox" 
@@ -36,8 +37,10 @@ const Filter = ({ checkedColor, setCheckedColor}) => {
                 ))}
 
             </ul>
-            <ul>
+            </div>
+            <div className='categoriefiltre'>
                 <h3>PARFUMS</h3>
+            <ul>
                 {checkParfums.map((parfums) => (
                 <li><input 
                 type="checkbox" 
@@ -53,11 +56,11 @@ const Filter = ({ checkedColor, setCheckedColor}) => {
               
             </ul>
        
-    
-           
+            </div>
+            <div className='categoriefiltre'>
+               <h3>PRIX</h3>
                 <ul>
                     <li>
-               <h3>PRIX</h3>
                 <input 
                 type="range" 
                 id='filtreRange'
@@ -69,7 +72,7 @@ const Filter = ({ checkedColor, setCheckedColor}) => {
 
               
          
-
+                </div>
             </div>
             <div className='cardContainerFilter'>
             <ul>
