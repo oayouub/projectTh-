@@ -7,23 +7,27 @@
         flex-direction: row;
         color: $color5;
         height: 50vh;
-        gap: 100px;
-        padding: 50px 100px;
-       
-       width: 100ù;
+        padding-left: 50px;
+        padding-top: 50px;
         
+        width: 100%;
+        gap: 80px;
         
+        @media screen and (max-width: 601px) {
+            flex-direction: column;
+            }
+
         .sectionFooter{
             display: flex;
             flex-direction: column;
             gap: 15px;
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                list-style: none;
+            }
         }
       
-        ul{
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            list-style: none;
-        }
     }
 }
