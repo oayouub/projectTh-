@@ -1,7 +1,7 @@
 .card{
     .cardlink{
         text-decoration: none;
-        color: $color4;
+        
     }
     
     
@@ -9,7 +9,7 @@
         
         
    
-       
+       color: $color4;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -68,7 +68,7 @@
             color: $color6;
             border: 1px solid $color6;
             transition: 0.3s;
-        
+            cursor: pointer;
             &:hover{
                 color: $color5;
                 background-color: $color6;

@@ -7,27 +7,19 @@ const Footer = () => {
                 <div className='sectionFooter'>
                     <h3>ASSISTANCES</h3>
                     <ul>
-                        <li>XXXXXX</li>
-                        <li>XXXXXX</li>
-                        <li>XXXXXX</li>
-                    </ul>
-                </div>
-                <div className='sectionFooter'>
-                    <h3>CONTACTS</h3>
-                    <ul>
-                        <li>XXXXXX</li>
-                        <li>XXXXXX</li>
-                        <li>XXXXXX</li>
+                        <li>Aide et Contacts</li>
+                        <li>Politiques de confidentialité</li>
+                        <li>Mention légales / CGVU</li>
                     </ul>
                 </div>
                 <div className='sectionFooter'>
                     <h3>A PROPOS</h3>
                     <ul>
-                        <li>XXXXXX</li>
-                        <li>XXXXXX</li>
-                        <li>XXXXXX</li>
+                        <li>La marque</li>
+                       
                     </ul>
                 </div>
+              
             </div>
         </div>
     );

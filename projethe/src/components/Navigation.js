@@ -86,7 +86,9 @@ const handleFilter = (event) => {
 
                     <li id='icon'>
                         <img src="./img/icon_account.png" alt="icon" />
+                        <NavLink  to="/panier">
                         <img src="./img/icon_cart.png" alt="icon" />
+                        </NavLink>
                         <img src="./img/icon_help.png" alt="icon" />
                     </li>
                 </ul>

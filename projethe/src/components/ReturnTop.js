@@ -24,7 +24,7 @@ const ReturnTop = () => {
 
     return (
         <div className='topbtn' onClick={(e)=>{returnTopActiv(e)}} style={{ opacity: desapearBtn ? "100" : "0" }}>
-            
+            <img src="./img/flecheUp.png" alt="" />
         </div>
     );
 };

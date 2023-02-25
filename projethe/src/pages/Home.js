@@ -8,6 +8,7 @@ import CategorieDiv from "../components/CategorieDiv";
 import SelectionProduit from "../components/SelectionProduit";
 import ReturnTop from "../components/ReturnTop";
 import axios from "axios";
+import Pub1 from "../components/Pub1";
 
 const Home = ({ checkedColor, setCheckedColor}) => {
   const [data, setData] = useState([]);
@@ -26,8 +27,8 @@ const Home = ({ checkedColor, setCheckedColor}) => {
 
       {/* <CategorieDiv /> */}
 
+      <Pub1 />
       <SelectionProduit />
-
      
       <Slider />
       <Footer />

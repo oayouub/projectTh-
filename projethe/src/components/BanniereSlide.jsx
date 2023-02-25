@@ -1,5 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
+import { NavLink } from "react-router-dom";
 
 // Import Swiper styles
 import "swiper/css";
@@ -38,7 +39,9 @@ const BanniereSlide = () => {
         <div className='Left'>
         <h4>Selection de</h4>
         <h2>THÉ VÉRT</h2>
+        <NavLink to="/filterproduit">
         <button id='vert'>DÉCOUVRIR</button>
+        </NavLink>
         </div>
         </div>
       </div></SwiperSlide>
@@ -50,7 +53,9 @@ const BanniereSlide = () => {
         <div className='Left'>
         <h4>Selection de</h4>
         <h2>THÉ NOIR</h2>
+        <NavLink to="/filterproduit">
         <button id='noir'>DÉCOUVRIR</button>
+        </NavLink>
         </div>
         </div>
       </div></SwiperSlide>
@@ -62,7 +67,9 @@ const BanniereSlide = () => {
         <div className='Left'>
         <h4 id='h4blanc'>Selection de</h4>
         <h2 id='h2blanc'>THÉ BLANC</h2>
+        <NavLink to="/filterproduit">
         <button id='blanc'>DÉCOUVRIR</button>
+        </NavLink>
         </div>
         </div>
       </div></SwiperSlide>
@@ -74,7 +81,9 @@ const BanniereSlide = () => {
         <div className='Left'>
         <h4 id='h4jaune'>Selection de</h4>
         <h2 id='h2jaune'>THÉ JAUNE</h2>
+        <NavLink to="/filterproduit">
         <button id='jaune'>DÉCOUVRIR</button>
+        </NavLink>
         </div>
         </div>
       </div></SwiperSlide>
@@ -86,7 +95,9 @@ const BanniereSlide = () => {
         <div className='Left'>
         <h4>Selection de</h4>
         <h2>THÉ MATÉ</h2>
+        <NavLink to="/filterproduit">
         <button id='maté'>DÉCOUVRIR</button>
+        </NavLink>
         </div>
         </div>
       </div></SwiperSlide>
