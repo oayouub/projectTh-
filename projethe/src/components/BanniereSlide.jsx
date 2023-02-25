@@ -17,10 +17,10 @@ const BanniereSlide = () => {
               <Swiper
         spaceBetween={30}
         centeredSlides={true}
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         pagination={{
           clickable: true,
         }}
@@ -43,8 +43,7 @@ const BanniereSlide = () => {
         </div>
       </div></SwiperSlide>
         <SwiperSlide><div className="sectionBanniere">
-        <img src="./img/BANNIERE_noir.png" alt="img" />
-        <div className='banniereVert'>
+        <div id='bnNoir' className='banniereVert'>
         <div className='Right'>
           <img src="./img/banniere_img_noir.png" alt="" />
         </div>
@@ -56,8 +55,7 @@ const BanniereSlide = () => {
         </div>
       </div></SwiperSlide>
         <SwiperSlide><div className="sectionBanniere">
-        <img src="./img/BANNIERE_blanc.png" alt="img" />
-        <div className='banniereVert'>
+        <div id='bnBlanc' className='banniereVert'>
         <div className='Right'>
           <img src="./img/banniere_img_blanc.png" alt="" />
         </div>
@@ -69,8 +67,7 @@ const BanniereSlide = () => {
         </div>
       </div></SwiperSlide>
         <SwiperSlide><div className="sectionBanniere">
-        <img src="./img/BANNIERE_jaune.png" alt="img" />
-        <div className='banniereVert'>
+        <div id='bnJaune' className='banniereVert'>
         <div className='Right'>
           <img src="./img/banniere_img_jaune.png" alt="" />
         </div>
@@ -82,8 +79,7 @@ const BanniereSlide = () => {
         </div>
       </div></SwiperSlide>
         <SwiperSlide><div className="sectionBanniere">
-        <img src="./img/BANNIERE_mate.png" alt="img" />
-        <div className='banniereVert'>
+        <div id='bnMate' className='banniereVert'>
         <div className='Right'>
           <img src="./img/banniere_img-mate.png" alt="" />
         </div>

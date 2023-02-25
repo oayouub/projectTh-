@@ -18,21 +18,27 @@ width: 100vw;}
     img{
         max-width: 100vw;
     }
-
+    #bnNoir{
+        background-color: rgb(71, 71, 71);
+    }
+    #bnBlanc{
+        background-color: rgb(196, 255, 218);
+    }
+    #bnJaune{
+        background-color: rgb(255, 248, 157);
+    }
+    #bnMate{
+        background-color: rgb(171, 255, 251);
+    }
     .banniereVert{
-        
+        background-color: $color4;
        display: flex;
        justify-content: center;
        align-items: center;
-        position: absolute;
-        left: 1px;
-        top :1px;
+        
+     
         width: 100vw;
-        @media screen and (max-width: 721px) {
-         top: 30%;
-         left: 30%;
-          
-        }
+      
         .Right{
             display: flex;
             justify-content: center;
@@ -46,8 +52,13 @@ width: 100vw;}
             justify-content: center;
             width: 100%;
             flex-direction: column;
+            @media screen and (max-width: 721px) {
+                align-items:center ;
+          
+            }
             
             
+
             h4{
                 color: $color6;
                 font-size: 2rem
@@ -151,7 +162,7 @@ width: 100vw;}
                 margin-top: 10px;
                 border: none;
                 background-color: rgb(78, 136, 243);
-                color: whitesmoke;
+                color: rgb(127, 246, 255);
                 width: 40%;
                 min-width: 200px;
                 padding: 15px;
