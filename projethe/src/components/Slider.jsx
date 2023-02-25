@@ -12,7 +12,7 @@ const Slider = () => {
     return (
       <div className="container py-2 px-2 justify-content-center  ">
         <Swiper
-       
+      
         grabCursor={true}
         navigation={true}
         pagination={{
@@ -20,8 +20,20 @@ const Slider = () => {
           }}
         modules={[Navigation,Pagination]}
         className="mySwiper"
-        slidesPerView={4}
-        spaceBetween={0}
+        breakpoints={{
+            1900: { slidesPerView:5,
+                spaceBetween:0
+            },
+            1400:{slidesPerView:4,
+                spaceBetween:0},
+            1000: { slidesPerView:3,
+                spaceBetween:0},
+                600:{slidesPerView:2,
+                    spaceBetween:0},
+                
+          }}
+        
+      
         >
             <SwiperSlide>
                 <SliderProduit />

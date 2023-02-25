@@ -2,7 +2,20 @@
 
 
 .ProduitContainer{
-    margin-top: 35vh;
+    @keyframes transitionIn
+    {
+      from{
+    opacity: 0;
+    transform: rotateX(-10deg);
+      }
+    
+      to{
+        opacity: 1;
+        transform: rotateX(0);
+      }
+    }
+    animation: transitionIn 0.75s;
+    margin-top: 40vh;
     margin-bottom: 15vh;
     display: flex;
     justify-content: center;
@@ -11,6 +24,13 @@
     height: 500px;
     width: 100%;
     color: $color6;
+    @media screen and (max-width: 870px){
+        margin-top: 40vh;
+        margin-bottom: 15vh;
+       flex-direction: column;
+        text-align: center;
+       }
+
 .title-produit
 {
     padding-top: 15px;
@@ -19,11 +39,26 @@
 }
 
     img{
-      
-        height: 75vh;
-        width: 75vh;       
-        object-fit: cover;
+        
+           
+         height: 75vh;
+         width: 75vh;       
+       
         border-radius: 10px;
+        
+        @media screen and (max-width: 1400px){
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media screen and (max-width: 870px){
+            height: 55vh;
+            width: 55vh;   
+           }
+           @media screen and (max-width: 650px){
+            max-width: 80%;
+            height: auto;
+        } 
         
       }
  
@@ -39,15 +74,35 @@
     }
     .infoLeft-container
     {
-        height: 75vh;
+        height: 60vh;
         width: 75vh; 
        
         background: $color5;
         box-shadow: 10px 10px 0px 0px $color4;
+        @media screen and (max-width: 1400px){
+            max-width: 100%;
+            height: auto;
+        }
+        @media screen and (max-width: 650px){
+            max-width: 80%;
+            height: auto;
+        } 
+        @media screen and (max-width: 500px){
+            max-width: 80%;
+            height: auto;
+        } 
+
         ul{
             margin-top: 80px;
             @include displayFlex-JCC-AIC;
             padding-bottom: 20px;
+            @media screen and (max-width: 1400px){
+              
+                margin-top: 20px;
+                padding-bottom: 8px;
+            }
+
+            
         }
         li{
             @include displayFlex-JCC-AIC;
@@ -64,13 +119,16 @@
             ;
             transition: all 0.5s;
           
+            
             &:hover{
                 box-shadow: inset 0px 0px 20px 0px #f3eecb;
             }
 
             
         }
-        
+        p{
+            font-size: 1.5rem
+        }
     }
     .price-container
     {
@@ -129,7 +187,7 @@
   button
   {
     font-size: 1.5rem;
-   padding: 0.5rem 2rem;
+   padding: 0.2rem 1.2rem;
    color: #f4f4f4;
    text-transform: uppercase;
    text-decoration: none;
@@ -138,7 +196,10 @@
    overflow: hidden;
     border-radius: 15px;
     background: $color4;
-    
+    @media screen and (max-width: 1400px){
+              
+     margin-bottom: 20px;
+    }
     &:hover
     {
        // box-shadow: 1px 1px 25px 10px $color2;

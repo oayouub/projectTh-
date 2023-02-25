@@ -1,20 +1,55 @@
 .infoProduit-container
 {
 
+    @keyframes transitionIn
+    {
+      from{
+    opacity: 0;
+    transform: rotateX(-10deg);
+      }
+    
+      to{
+        opacity: 1;
+        transform: rotateX(0);
+      }
+    }
     p{
         text-align: center;
-        margin: 50px 250px;
+        margin: 50px 200px;
         color: $color5;
         font-size: 1.5rem;
+           @media screen and (max-width: 850px){
+            margin: 50px 150px;
+        }
+
+        @media screen and (max-width: 700px){
+            margin: 50px 100px;  
+           }
+           @media screen and (max-width: 540px){
+            margin: 50px 50px;  
+           }
+        @media screen and (max-width: 540px){
+            margin: 50px 50px;  
+           }
+           @media screen and (max-width: 390px){
+            margin: 50px 10px;  
+           }
     }
+  
     .divider
     { 
+        h2{
+            @media screen and (max-width: 870px){
+                margin-top: 100px;
+                  
+                }
+        }
         font-size: 1.5rem;
         color: $color5;
         opacity: 0;
         padding: 40px;
-        padding-left: 640px;
-        padding-right: 640px;
+    
+        
         transition: 0.5s;
         @include displayFlex-JCC-AIC;
 
@@ -27,15 +62,26 @@
             flex-grow: 1;
             height: 3px;
             background-color: $color3;
+        
         }
 
         &::before
         {
             margin-right: 2rem;
+            
+                @media screen and (max-width: 870px){
+                    margin-top: 100px;
+                      
+                    }
+            
         }
         &::after
         {
             margin-left: 2rem;
+            @media screen and (max-width: 870px){
+                margin-top: 100px;
+                  
+                }
         }
     }
 
@@ -54,6 +100,15 @@
         display: flex;
         gap: 50px;
         margin: 100px 0;
+        
+        @media screen and (max-width: 870px){
+            margin: 100px 0 50px 0;
+              
+            }
+            @media screen and (max-width: 850px){
+                flex-direction: column;
+            }
+    
         .contenue
         {
             display: flex;

@@ -50,9 +50,11 @@ const PanierProduit = () => {
     h2.textContent = item.nomProduit;
 
     const p = document.createElement("p");
+    p.classList.add("price");
     p.textContent = item.totalPrice + " €";
 
     const pIngredient = document.createElement("p");
+    pIngredient.classList.add("ingredient");
     pIngredient.textContent = item.ingredient;
 
     const button = document.createElement("button");
