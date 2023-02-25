@@ -107,12 +107,12 @@ const ContainProduit = () => {
         </div>
 
         <div className="ingredient-container">
-          <div className="text-infoProduit">Ingredients</div>
+          <div className="text-infoProduit">
+            <h2>INGREDIENT</h2>
+          </div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            itaque doloribus saepe tenetur eum! Perferendis minus tempore itaque
-            harum dolorem id quo modi rem aperiam, non numquam dolores eaque
-            dicta.
+            itaque doloribus
           </p>
         </div>
         <div className="pay">

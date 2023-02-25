@@ -14,26 +14,24 @@ const InfoProduit = () => {
     }
   };
 
-  const {id} = useParams();
+  const { id } = useParams();
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    if(!id) {
+    if (!id) {
       return;
     }
-    axios
-      .get(`http://localhost:5000/${id}`)
-      .then((res) => setData(res.data));
+    axios.get(`http://localhost:5000/${id}`).then((res) => setData(res.data));
   }, [id]);
 
-  if (!data) return '';
+  if (!data) return "";
 
   window.addEventListener("scroll", changeDivider);
 
   return (
     <div className="infoProduit-container">
       <div className={dividerBar ? "divider active" : "divider"}>
-        Preparation
+        <h2>Préparation</h2>
       </div>
       <div className="preparation-container">
         <div className="contenue">
@@ -50,7 +48,7 @@ const InfoProduit = () => {
         </div>
       </div>
       <div className={dividerBar ? "divider active" : "divider"}>
-        Description
+        <h2>Description</h2>
       </div>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, dicta
