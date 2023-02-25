@@ -17,10 +17,10 @@ const BanniereSlide = () => {
               <Swiper
         spaceBetween={30}
         centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // }}
         pagination={{
           clickable: true,
         }}
@@ -30,7 +30,7 @@ const BanniereSlide = () => {
         >
         
         <SwiperSlide><div className="sectionBanniere">
-        <img src="./img/BANNIERE.png" alt="img" />
+        
         <div className='banniereVert'>
         <div className='Right'>
           <img src="./img/banniere_img_vert.png" alt="" />
