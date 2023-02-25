@@ -8,10 +8,10 @@ const Pub1 = () => {
                 <img src="./img/img_pub1.jpg" alt="" />
                 </div>
                 <div className="text">
-                    <h2>TITLE</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Deleniti debitis ab quisquam ea laborum voluptas quod, 
-                        maiores similique eius rem.</p>
+                    <h2>Heal'Tea</h2>
+                    <p>Avec Heal'tea nous proposons une gamme de thé 100% naturelle, bio et éco-résponsable.
+                        Classique, Agrumes, Fruité ou encore Floral, Testé Heal'Tea c'est l'adopter.
+                    </p>
                 </div>
             </div>
             
