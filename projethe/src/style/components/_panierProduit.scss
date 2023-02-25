@@ -1,8 +1,16 @@
 .cart{
+  color: $color4;
+  line-height: 30px;
+  text-align: center;
   h1{
     text-transform: uppercase;
    margin-bottom: 5vh;
     
+  }
+  h4{
+   
+    cursor: pointer;
+    text-align: center
   }
     .titlePanier{
         @include displayFlex-JCC-AIC;
@@ -15,6 +23,8 @@
         @include displayFlex-JCC-AIC;
         position: relative;
         .cart__item__content__description{
+          display: flex;
+          flex-direction: column;
           h2{
             font-size: 1.8rem;
             font-style: italic;
@@ -93,7 +103,7 @@
     
     }
 
-    button
+    .buttonAchat
   {
     font-size: 1.5rem;
    padding: 0.5rem 2rem;
@@ -147,4 +157,5 @@
         left: 100%;
     }
   }
+
 }

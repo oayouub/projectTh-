@@ -57,14 +57,20 @@ const PanierProduit = () => {
     pIngredient.classList.add("ingredient");
     pIngredient.textContent = item.ingredient;
 
-    const button = document.createElement("button");
-    button.textContent = "Supprimer";
-    button.addEventListener("click", () => deleteItem(item));
+    const h4 = document.createElement("h4");
+    h4.textContent = "Supprimer";
+    h4.addEventListener("click", () => deleteItem(item));
+
+    const buttonAchat = document.createElement("button");
+    buttonAchat.classList.add("buttonAchat");
+    buttonAchat.textContent = "Commander";
 
     description.appendChild(h2);
-    description.appendChild(p);
+
     description.appendChild(pIngredient);
-    description.appendChild(button);
+    description.appendChild(p);
+    description.appendChild(buttonAchat);
+    description.appendChild(h4);
 
     div.appendChild(description);
 
